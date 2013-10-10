@@ -44,7 +44,7 @@ define(['core/model', 'text!./run.html', 'core/pluginapi', 'core/widgets/log', '
         self.onCompileSucceeded(event);
       });
 
-      this.logModel = new log.Log();
+      this.logModel = model.logModel;
       this.logScroll = this.logModel.findScrollState();
       this.outputModel = new log.Log();
       this.outputScroll = this.outputModel.findScrollState();
